@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paulo Cerqueira — Backend Developer</title>
+<meta name="description" content="Portfólio de Paulo Henrique Virgílio Cerqueira, desenvolvedor backend.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Tektur:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="frame">
+
+<header class="nav">
+  <a href="#top" class="brand">
+    <span class="brand-mark"><i></i><i></i></span>
+    <span class="brand-text"><small>paulocerqr</small><b>CERQ</b></span>
+  </a>
+  <nav class="links">
+    <a href="#projetos">Projetos</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#stack">Stack</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="theme" aria-label="Alternar tema">◐</button>
+    <a href="#contato" class="btn btn-accent btn-cut">Contato →</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="eyebrow"><span class="sq"></span>Backend · Infraestrutura · DevOps · CI/CD — Brasília, DF</p>
+    <div class="hero-id">
+      <figure class="photo"><img src="assets/fotoLinkedin.webp" alt="Foto de Paulo Cerqueira"></figure>
+      <div>
+        <h1 class="hero-name">Paulo<br>Cerqueira</h1>
+        <p class="muted">DevOps/Infraestrutura</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-art">
+    <canvas id="orb" aria-hidden="true"></canvas>
+    <span class="hint">Drag to spin</span>
+  </div>
+</section>
+
+<section class="hero-meta">
+  <div class="lead">
+    <p class="edu"><span class="sq"></span><span class="label">Formação</span><b>Engenharia de Software — UnB</b><em>2022–2027</em></p>
+    <p class="intro"><b>Paulo Henrique Virgílio Cerqueira</b> — Estudante de Engenharia de Software na UnB.</p>
+    <p class="techs">Kubernetes · Docker · Linux · AWS · GCP · Oracle Cloud · CI/CD · Python/Django · Node.js · PostgreSQL</p>
+    <div class="cta">
+      <a class="btn btn-accent" href="#projetos">Ver projetos →</a>
+      <a class="btn btn-outline" href="curriculo.md" download>Baixar currículo ↓</a>
+    </div>
+  </div>
+  <div class="stat"><span class="label">Projetos publicados</span><span class="num">03<em>+</em></span></div>
+  <div class="stat"><span class="label">Stack principal</span><span class="num"><em>Py</em>/TS</span></div>
+  <div class="stat"><span class="label">UnB — conclusão</span><span class="num">27</span></div>
+</section>
+
+<!-- PROJETOS -->""
+<section class="sec-head" id="projetos">
+  <h2 class="display sm">WORK</h2>
+  <div class="sec-desc">
+    <p class="sec-title"><span class="sq"></span>Projetos que construí e publiquei</p>
+    <p class="muted">Plataformas em produção, pipelines de dados e trabalho em equipe — do modelo de dados ao deploy.</p>
+  </div>
+  <div class="sec-count"><span class="label">Projetos</span><span class="num">03</span></div>
+</section>
+
+<section class="cards">
+  <article class="card">
+    <div class="matrix" data-shape="wave"><span class="tag">UE</span><img class="matrix-logo" src="assets/utileasy-icon.svg" alt="Logo Utileasy"></div>
+    <h3 class="with-icon"><img src="assets/utileasy-icon.svg" alt="" width="32" height="32">Utileasy</h3>
+    <p class="role">Next.js · DRF · Celery · Docker</p>
+    <details>
+      <summary class="corner">Detalhes <em>+</em></summary>
+      <ul>
+        <li>Plataforma de ferramentas utilitárias com transcrição de áudio/vídeo via AssemblyAI e processamento assíncrono.</li>
+        <li>API REST, sessão + CSRF, Cloudflare Turnstile, PostgreSQL, filas com Celery/Redis.</li>
+        <li>Deploy com Docker Compose, Caddy e Cloudflare Tunnel; backups criptografados no R2, monitoramento e alertas.</li>
+      </ul>
+      <p class="links-row"><a href="https://utileasy.com.br" target="_blank" rel="noopener">Site ↗</a><a href="https://github.com/paulocerqr/utileasy" target="_blank" rel="noopener">Repo ↗</a></p>
+    </details>
+  </article>
+  <article class="card">
+    <div class="matrix" data-shape="bars"><span class="tag">TL</span><img class="matrix-logo" src="assets/n8n-icon.webp" alt="Logo n8n"></div>
+    <h3>TrendLens</h3>
+    <p class="role">n8n · PostgreSQL · LLMs</p>
+    <details>
+      <summary class="corner">Detalhes <em>+</em></summary>
+      <ul>
+        <li>Inteligência de conteúdo: coleta métricas de vídeos públicos do YouTube e identifica padrões de viralização.</li>
+        <li>Pipelines n8n para snapshots, classificação por LLM, tendências, ranking e observabilidade.</li>
+        <li>Migrations SQL, testes e execução via Docker Compose.</li>
+      </ul>
+      <p class="links-row"><a href="https://github.com/paulocerqr/TrendLens" target="_blank" rel="noopener">Repo ↗</a></p>
+    </details>
+  </article>
+  <article class="card">
+    <div class="matrix" data-shape="pin"><span class="tag">MB</span><img class="matrix-logo" src="assets/142542077.png" alt="Logo Monitora BSB"></div>
+    <h3>Monitora BSB</h3>
+    <p class="role">Flask · React.js · Equipe</p>
+    <details>
+      <summary class="corner">Detalhes <em>+</em></summary>
+      <ul>
+        <li>Monitoramento de obras públicas no DF consumindo API pública.</li>
+        <li>Dados exibidos em mapa interativo.</li>
+      </ul>
+      <p class="links-row"><a href="https://github.com/paulocerqr/MDS-MonitoraBSB" target="_blank" rel="noopener">Repo ↗</a></p>
+    </details>
+  </article>
+  <article class="card">
+    <div class="matrix" data-shape="ring"><span class="tag">GH</span><img class="matrix-logo" src="assets/GitHub_Invertocat_Logo.svg.webp" alt="Logo GitHub"></div>
+    <h3>Mais no GitHub</h3>
+    <p class="role">Experimentos & estudos</p>
+    <a class="corner as-link" href="https://github.com/paulocerqr" target="_blank" rel="noopener">Abrir <em>↗</em></a>
+  </article>
+</section>
+
+<!-- EXPERIÊNCIA -->
+<section class="sec-head" id="experiencia">
+  <h2 class="display sm">EXP</h2>
+  <div class="sec-desc">
+    <p class="sec-title"><span class="sq"></span>Onde já entreguei código em produção</p>
+    <p class="muted">Labtec / Easjur — Defensoria Pública do Distrito Federal.</p>
+  </div>
+  <div class="sec-count"><span class="label">Período</span><span class="num sm">25—26</span></div>
+</section>
+
+<section class="exp">
+  <div class="exp-side">
+    <p class="label">Estagiário</p>
+    <h3>Labtec / Easjur</h3>
+    <p class="muted">Defensoria Pública do DF<br>Brasília, DF<br>jun. 2025 – abr. 2026</p>
+  </div>
+  <ol class="exp-list">
+    <li><span class="idx">01</span><div><b>Sistema Solar</b> <span class="chip">Django/React</span><p>Manutenção e evolução: novos endpoints, permissões com Groups do Django e integração de telas/templates.</p></div></li>
+    <li><span class="idx">02</span><div><b>Chatbot no Solar</b> <span class="chip">LLM</span><p>Transcrição de audiências, resumo de processos e análise de documentos e imagens.</p></div></li>
+    <li><span class="idx">03</span><div><b>Sirius</b> <span class="chip">Node/Express/PostgreSQL</span><p>Levantamento de requisitos, modelagem de dados e desenvolvimento do sistema de folha de ponto.</p></div></li>
+    <li><span class="idx">04</span><div><b>Produção</b> <span class="chip">Linux</span><p>Gestão dos ambientes do Solar e Sirius em VMs Linux: deploys, atualizações e manutenção via terminal.</p></div></li>
+  </ol>
+</section>
+
+<!-- STACK -->
+<section class="sec-head" id="stack">
+  <h2 class="display sm">STACK</h2>
+  <div class="sec-desc">
+    <p class="sec-title"><span class="sq"></span>Ferramentas do dia a dia</p>
+  </div>
+  <div class="sec-count"><span class="label">Áreas</span><span class="num">05</span></div>
+</section>
+
+<section class="stack">
+  <div><p class="label">Linguagens</p><p>Python · TypeScript · JavaScript · SQL</p></div>
+  <div><p class="label">Backend & Web</p><p>Django REST · Flask · Node.js · Express · NestJS · Next.js · React</p></div>
+  <div><p class="label">Dados</p><p>PostgreSQL · MySQL · Redis · Celery · Modelagem de Dados</p></div>
+  <div><p class="label">Automação & IA</p><p>n8n · LLMs</p></div>
+  <div><p class="label">Cloud / DevOps</p><p> Kubernetes · Docker · Linux · AWS · Terraform · Caddy · Cloudflare · Git Action · CI/CD · Ansible · Beszel · Grafana · Prometheus</p></div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact" id="contato">
+  <h2 class="display">LET'S TALK</h2>
+  <div class="contact-grid">
+    <a href="mailto:paulocerq675@gmail.com"><span class="label">E-mail</span>paulocerq675@gmail.com →</a>
+    <a href="https://www.linkedin.com/in/paulo-cerqueira-a24b552bb/" target="_blank" rel="noopener"><span class="label">LinkedIn</span>paulo-cerqueira ↗</a>
+    <a href="https://github.com/paulocerqr" target="_blank" rel="noopener"><span class="label">GitHub</span>@paulocerqr ↗</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>© 2026 Paulo Cerqueira</span>
+  <span>Brasília · DF</span>
+</footer>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>

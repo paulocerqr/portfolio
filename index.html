@@ -67,14 +67,14 @@
   <h2 class="display sm">WORK</h2>
   <div class="sec-desc">
     <p class="sec-title"><span class="sq"></span>Projetos que construí e publiquei</p>
-    <p class="muted">Plataformas em produção, pipelines de dados e trabalho em equipe — do modelo de dados ao deploy.</p>
+    <p class="muted">Plataformas em produção, Kubernetes e observabilidade — do modelo de dados ao deploy.</p>
   </div>
   <div class="sec-count"><span class="label">Projetos</span><span class="num">03</span></div>
 </section>
 
 <section class="cards">
   <article class="card">
-    <div class="matrix" data-shape="wave"><span class="tag">UE</span><img class="matrix-logo" src="assets/utileasy-icon.svg" alt="Logo Utileasy"></div>
+    <div class="matrix" data-shape="pin"><span class="tag">UE</span><img class="matrix-logo" src="assets/utileasy-icon.svg" alt="Logo Utileasy"></div>
     <h3 class="with-icon"><img src="assets/utileasy-icon.svg" alt="" width="32" height="32">Utileasy</h3>
     <p class="role">Next.js · DRF · Celery · Docker</p>
     <details>
@@ -88,30 +88,33 @@
     </details>
   </article>
   <article class="card">
-    <div class="matrix" data-shape="bars"><span class="tag">TL</span><img class="matrix-logo" src="assets/n8n-icon.webp" alt="Logo n8n"></div>
-    <h3>TrendLens</h3>
-    <p class="role">n8n · PostgreSQL · LLMs</p>
+    <div class="matrix" data-shape="pin"><span class="tag">JR</span><img class="matrix-logo" src="assets/kubernetes-plain.svg" alt="Logo Kubernetes"></div>
+    <h3>Job Radar + k8s-lab</h3>
+    <p class="role">FastAPI · Kubernetes · Terraform · GCP · Ansible</p>
     <details>
       <summary class="corner">Detalhes <em>+</em></summary>
       <ul>
-        <li>Inteligência de conteúdo: coleta métricas de vídeos públicos do YouTube e identifica padrões de viralização.</li>
-        <li>Pipelines n8n para snapshots, classificação por LLM, tendências, ranking e observabilidade.</li>
-        <li>Migrations SQL, testes e execução via Docker Compose.</li>
+        <li>Coleta vagas (Gupy e GitHub), aplica pré-filtro, audita a aderência ao currículo com LLMs (Groq, NVIDIA e Gemini, com fallback) e envia as recomendadas ao Telegram.</li>
+        <li>API FastAPI, worker agendado, migrations com Alembic e segredos cifrados no banco.</li>
+        <li>CI/CD com GitHub Actions: testes e lint a cada PR e imagem Docker publicada no GHCR, versionada pelo commit.</li>
+        <li>Cluster kubeadm em 3 VMs na GCP com Terraform e Ansible, recriável em ~6 min; Cilium sem kube-proxy, Traefik (Gateway API) e Cloudflare Tunnel, sem portas abertas.</li>
+        <li>Postgres em StatefulSet, API com 2 réplicas, CronJobs, NetworkPolicy, Sealed Secrets, Prometheus e Grafana; investigação documentada de um bug do Cilium.</li>
       </ul>
-      <p class="links-row"><a href="https://github.com/paulocerqr/TrendLens" target="_blank" rel="noopener">Repo ↗</a></p>
+      <p class="links-row"><a href="https://github.com/paulocerqr/job-radar" target="_blank" rel="noopener">job-radar ↗</a><a href="https://github.com/paulocerqr/k8s-lab" target="_blank" rel="noopener">k8s-lab ↗</a></p>
     </details>
   </article>
   <article class="card">
-    <div class="matrix" data-shape="pin"><span class="tag">MB</span><img class="matrix-logo" src="assets/142542077.png" alt="Logo Monitora BSB"></div>
-    <h3>Monitora BSB</h3>
-    <p class="role">Flask · React.js · Equipe</p>
+    <div class="matrix" data-shape="pin"><span class="tag">BZ</span><img class="matrix-logo" src="assets/beszel.png" alt="Logo Beszel"></div>
+    <h3>Observabilidade com Beszel</h3>
+    <p class="role">Beszel · Tailscale · Oracle Cloud</p>
     <details>
       <summary class="corner">Detalhes <em>+</em></summary>
       <ul>
-        <li>Monitoramento de obras públicas no DF consumindo API pública.</li>
-        <li>Dados exibidos em mapa interativo.</li>
+        <li>Monitoramento centralizado de servidores e containers Docker: Hub numa VM Oracle Cloud de 1 vCPU/1 GB e Agents na infraestrutura doméstica.</li>
+        <li>Painel privado por HTTPS com Tailscale Serve e Agent remoto via WebSocket, sem portas públicas; diagnóstico e correção de falha de DNS no container.</li>
+        <li>Configurações reutilizáveis, scripts Bash de diagnóstico com testes e documentação de arquitetura, operação e incidentes.</li>
       </ul>
-      <p class="links-row"><a href="https://github.com/paulocerqr/MDS-MonitoraBSB" target="_blank" rel="noopener">Repo ↗</a></p>
+      <p class="links-row"><a href="https://github.com/paulocerqr/beszel-infra" target="_blank" rel="noopener">Repo ↗</a></p>
     </details>
   </article>
   <article class="card">

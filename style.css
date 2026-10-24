@@ -201,3 +201,4 @@ details ul { padding: 12px 4px 0 16px; font-size: 18px; color: color-mix(in srgb
 .lead .intro { margin-bottom: 10px; }
 .lead .techs { color: var(--muted); font-size: 17px; letter-spacing: .02em; }
 :root:not([data-theme="light"]) .matrix-logo[src*="Invertocat"] { filter: invert(1) drop-shadow(0 6px 24px rgba(0,0,0,.55)); }
+.matrix-logo[src*="beszel"] { border-radius: 18%; }
